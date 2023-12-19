@@ -231,14 +231,10 @@ body {
   cursor: pointer;
 }
 
-.menu {
-  height: 1em;
-}
-
 .menu:active .menu-box {
   display: block;
   margin-top: 2rem;
-  margin-left: -17.5rem;
+  margin-left: -85%;
 }
 .menu-icon:active {
   visibility: hidden;
