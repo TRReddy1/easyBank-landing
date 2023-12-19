@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.125em;
+}
+
+body {
+  width: 100%;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: white;
+  z-index: 100;
+  position: relative;
+}
+
+.bg-img {
+  width: 100%;
+  height: 43%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.mock-img {
+  width: 95%;
+  object-fit: contain;
+  position: relative;
+  margin-top: -36%;
+  z-index: 1;
+  padding-left: 2%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-motto {
+  display: flex;
+  font-size: 2em;
+  line-height: 1.3em;
+  text-align: center;
+  padding: 0.7em;
+}
+
+.main p {
+  text-align: center;
+  line-height: 1.3em;
+  font-size: 0.9em;
+  padding: 0em 0.8em 0em;
+  color: hsl(233, 8%, 62%);
+}
+
+.req-btn {
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+  color: white;
+  font-family: "Public Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 2.3em;
+  margin-bottom: 5em;
+  padding: 1em 2.5em 1em;
+  border: none;
+  border-radius: 2em;
+}
+
+.key-points {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(220, 16%, 96%);
+  margin: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.why {
+  font-size: 1.7em;
+  text-align: center;
+  padding: 2em 0.7em 1em;
+  padding: auto;
+  margin: auto;
+}
+
+.points {
+  font-size: 1.25em;
+  text-align: center;
+  padding: 1.25em 1.25em 0.8em;
+  margin: auto;
+}
+
+.key-points p {
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 1.3em;
+  padding: 0em 1.2em 2em;
+  margin: auto;
+  color: hsl(233, 8%, 62%);
+}
+
+.articles-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  margin: 3em 0em 1.1em;
+}
+
+.article1 {
+  display: flex;
+  flex-direction: column;
+  width: 19em;
+  margin: auto;
+  text-align: start;
+}
+.art-images {
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+  width: 19em;
+  object-fit: contain;
+  object-position: center;
+}
+.author {
+  font-size: 0.7em;
+  padding-top: 1.2em;
+  padding-left: 1.2em;
+  padding-bottom: 0.5em;
+  color: hsl(233, 8%, 62%);
+}
+.title {
+  font-size: 1.1em;
+  padding-left: 0.7em;
+  padding-bottom: 0.5em;
+  padding-right: 0.5em;
+}
+
+.para {
+  font-size: 0.8em;
+  line-height: 1.2em;
+  padding: 0.6em 1.2em;
+  padding-left: 1.1em;
+  padding-right: 1.2em;
+  padding-bottom: 5em;
+  color: hsl(233, 8%, 62%);
+}
+
+.foot {
+  background-color: rgb(45, 49, 78);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2em 0em 2em;
+}
+
+.icons {
+  display: flex;
+  padding: 2em 0em 2em;
+}
+
+.icon {
+  width: 1.3em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.text {
+  padding-bottom: 1em;
+}
+
+.rights {
+  margin-top: -1.5em;
+  font-size: 0.9em;
+  color: hsl(233, 8%, 62%);
+}
+
+/* menu */
+.menu-box {
+  position: absolute;
+  display: none;
+  background-color: white;
+  color: hsl(233, 26%, 24%);
+  width: 90%;
+  text-align: center;
+  box-shadow: 2rem 2rem 20rem 4rem hsl(233, 26%, 24%);
+  border-radius: 0.3em;
+  z-index: 3;
+  padding-top: 1.6em;
+  cursor: pointer;
+  line-height: 2em;
+}
+
+.menu-box:last-child {
+  padding-bottom: 1.6em;
+}
+
+.menu-icon {
+  position: relative;
+  padding-bottom: 0.4em;
+  cursor: pointer;
+}
+
+.menu {
+  height: 1em;
+}
+
+.menu:active .menu-box {
+  display: block;
+  margin-top: 2rem;
+  margin-left: -17.5rem;
+}
+.menu-icon:active {
+  visibility: hidden;
+}
+
+.menu-icon:active + .x {
+  visibility: visible;
+}
+
+.x {
+  position: absolute;
+  visibility: hidden;
+  padding: auto;
+  margin-left: -1.4em;
+  z-index: 4;
+}
