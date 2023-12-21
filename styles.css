@@ -100,7 +100,6 @@ body {
   font-size: 1.7em;
   text-align: center;
   padding: 2em 0.7em 1em;
-  padding: auto;
   margin: auto;
 }
 
@@ -551,6 +550,7 @@ body {
   }
 
   .bar {
+    cursor: pointer;
     border-bottom: solid transparent;
   }
   .bar:hover {
